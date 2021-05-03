@@ -13,23 +13,23 @@ var foodDictionary = {
   "🍊": "Tangerine",
   "🍋": "Lemon",
   "🍌": "Banana",
-"🍍": "Pineapple",
-"🥭": "Mango",
-"🍎": "Red Apple",
-"🍏": "Green Apple",
-"🍐": "Pear",
-"🍑": "Peach",
-"🍒": "Cherries",
-"🍓": "Strawberry",
-"🥝": "Kiwi Fruit",
-"🍅": "Tomato",
-"🥥": "Coconut",
-"🥑": "Avocado",
-"🍆": "Eggplant",
-"🥔": "Potato",
-"🥕": "Carrot",
-"🌽": "Ear of Corn",
-"🌶": "Hot Pepper"
+  "🍍": "Pineapple",
+  "🥭": "Mango",
+  "🍎": "Red Apple",
+  "🍏": "Green Apple",
+  "🍐": "Pear",
+  "🍑": "Peach",
+  "🍒": "Cherries",
+  "🍓": "Strawberry",
+  "🥝": "Kiwi Fruit",
+  "🍅": "Tomato",
+  "🥥": "Coconut",
+  "🥑": "Avocado",
+  "🍆": "Eggplant",
+  "🥔": "Potato",
+  "🥕": "Carrot",
+  "🌽": "Ear of Corn",
+  "🌶": "Hot Pepper"
 };
 
 var headingText = "Food Interpreter";
@@ -62,14 +62,16 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 style={{ color: color }}>{headingText}</h1>
+      <h1 style={{ color: color, fontFamily: "cursive" }}>{headingText}</h1>
       <input onChange={onChangeHandler} />
       <div style={{ fontFamily: "cursive", fontSize: "1.5rem" }}>
         {userInput}
       </div>
       {/*<button onClick={onClickHandler}>Like Me</button>
       {likeCounter}*/}
-      <h3 style={{ fontFamily: "cursive" }}>Food we Know</h3>
+      <h3 style={{ fontFamily: "cursive", fontSize: "1.5rem" }}>
+        Food we Know
+      </h3>
       {charactor.map(function (item) {
         return (
           <span
