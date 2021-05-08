@@ -29,7 +29,8 @@ var foodDictionary = {
   "🥔": "Potato",
   "🥕": "Carrot",
   "🌽": "Ear of Corn",
-  "🌶": "Hot Pepper"
+  "🌶": "Hot Pepper",
+  "": ""
 };
 
 var headingText = "Food Interpreter";
@@ -69,9 +70,7 @@ export default function App() {
       </div>
       {/*<button onClick={onClickHandler}>Like Me</button>
       {likeCounter}*/}
-      <h3 style={{ fontFamily: "cursive", fontSize: "1.5rem" }}>
-        Food we Know
-      </h3>
+      <h3 style={{ fontFamily: "cursive" }}>Food we Know</h3>
       {charactor.map(function (item) {
         return (
           <span
